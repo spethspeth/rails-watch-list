@@ -1,0 +1,42 @@
+.card {
+  width: 400px;
+  padding: 8px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .overview {
+    font-style: italic;
+  }
+
+  .rating {
+    font-weight: bold;
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &:hover {
+    background-color: white;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+  100% {
+    background-color: white;
+  }
+}
